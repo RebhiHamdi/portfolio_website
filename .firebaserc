@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "your-firebase-project-id",
+    "staging": "hamdirebhi-portfolio-f5314"
+  },
+  "targets": {},
+  "etags": {}
+}

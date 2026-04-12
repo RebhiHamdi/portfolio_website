@@ -1,0 +1,79 @@
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+class AppTheme {
+  AppTheme._();
+
+  // Color palette
+  static const Color background = Color(0xFF0F172A);
+  static const Color surface = Color(0xFF1E293B);
+  static const Color surfaceLight = Color(0xFF334155);
+  static const Color primary = Color(0xFF3B82F6);
+  static const Color primaryLight = Color(0xFF60A5FA);
+  static const Color accent = Color(0xFF06B6D4);
+  static const Color textPrimary = Color(0xFFF8FAFC);
+  static const Color textSecondary = Color(0xFF94A3B8);
+  static const Color textMuted = Color(0xFF64748B);
+  static const Color success = Color(0xFF10B981);
+  static const Color border = Color(0xFF334155);
+
+  static ThemeData get darkTheme {
+    return ThemeData(
+      brightness: Brightness.dark,
+      scaffoldBackgroundColor: background,
+      primaryColor: primary,
+      colorScheme: const ColorScheme.dark(
+        primary: primary,
+        secondary: accent,
+        surface: surface,
+        onPrimary: textPrimary,
+        onSecondary: textPrimary,
+        onSurface: textPrimary,
+      ),
+      textTheme: GoogleFonts.interTextTheme().apply(
+        bodyColor: textPrimary,
+        displayColor: textPrimary,
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: primary,
+          foregroundColor: textPrimary,
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8),
+          ),
+          textStyle: GoogleFonts.inter(
+            fontSize: 16,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+      ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          foregroundColor: primary,
+          side: const BorderSide(color: primary),
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8),
+          ),
+          textStyle: GoogleFonts.inter(
+            fontSize: 16,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+      ),
+      cardTheme: CardThemeData(
+        color: surface,
+        elevation: 0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
+          side: const BorderSide(color: border),
+        ),
+      ),
+      dividerTheme: const DividerThemeData(
+        color: border,
+        thickness: 1,
+      ),
+    );
+  }
+}
