@@ -3,7 +3,7 @@ class AppConstants {
 
   // Personal info
   static const String name = 'Hamdi Rebhi';
-  static const String title = 'Embedded Software Engineer';
+  static const String title = 'Lead Embedded Software Engineer';
   static const String tagline =
       'Building reliable systems at the intersection of hardware and software. '
       'Specializing in embedded firmware, BLE, and sensor integration.';

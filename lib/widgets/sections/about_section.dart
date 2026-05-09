@@ -23,7 +23,7 @@ class AboutSection extends StatelessWidget {
             children: [
               const SectionTitle(
                 title: 'About',
-                subtitle: 'Connecting firmware, devices and software',
+                subtitle: 'Engineering disciplined systems from bare-metal to the cloud',
               ),
               const SizedBox(height: 40),
               isMobile ? _buildMobileLayout() : _buildDesktopLayout(),
@@ -61,7 +61,7 @@ class AboutSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'I connect firmware, radios and apps to build devices that behave predictably in the real world.',
+          'I connect low-level firmware, wireless radios, and scalable applications to build devices that behave predictably in the real world.',
           style: GoogleFonts.inter(
             fontSize: 18,
             color: AppTheme.textSecondary,
@@ -70,7 +70,7 @@ class AboutSection extends StatelessWidget {
         ),
         const SizedBox(height: 20),
         Text(
-          'My focus is embedded product engineering: STM32 and nRF52 firmware, BLE and sensor integration, power-efficient systems, and Flutter interfaces that make hardware usable.',
+          'My focus is end-to-end product engineering. From architecting low-power nRF52 and STM32 firmware to deploying scalable NestJS and MongoDB backends , I ensure the physical hardware is perfectly integrated with the Flutter user experience.',
           style: GoogleFonts.inter(
             fontSize: 15,
             color: AppTheme.textMuted,
@@ -79,7 +79,7 @@ class AboutSection extends StatelessWidget {
         ),
         const SizedBox(height: 20),
         Text(
-          'I build systems for reliability, not prototypes. That means clear firmware design, stable wireless behavior, and user-facing software that supports the product end to end.',
+          'I build systems that endure, not just prototypes. Applying disciplined execution to complex architectures, I prioritize clear C/C++ firmware design, stable BLE wireless behavior, and mentoring engineering teams to deliver field-ready products.',
           style: GoogleFonts.inter(
             fontSize: 15,
             color: AppTheme.textMuted,
@@ -100,11 +100,11 @@ class AboutSection extends StatelessWidget {
       ),
       child: Column(
         children: const [
-          _StatItem(value: '3+', label: 'Years embedded engineering'),
+          _StatItem(value: 'Academic Foundation', label: 'Engineering degree in electronics (Embedded systems) from the Faculty of Sciences, Tunis'),
           Divider(color: AppTheme.border, height: 32),
-          _StatItem(value: '20+', label: 'Firmware and app integrations'),
+          _StatItem(value: 'End-to-End Delivery', label: 'Bridging the gap between hardware sensors and full-stack (Flutter, NestJS, n8n) deployment'),
           Divider(color: AppTheme.border, height: 32),
-          _StatItem(value: '5+', label: 'BLE product deliveries'),
+          _StatItem(value: 'Technical Leadership', label: 'Guiding hardware integration and mentoring PFE and summer intern engineers through complex product lifecycles'),
         ],
       ),
     );

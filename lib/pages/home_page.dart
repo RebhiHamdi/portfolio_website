@@ -10,6 +10,7 @@ import '../widgets/sections/videos_section.dart';
 import '../widgets/sections/experience_section.dart';
 import '../widgets/sections/contact_section.dart';
 import '../widgets/sections/footer_section.dart';
+import '../widgets/sections/articles_section.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -26,7 +27,7 @@ class _HomePageState extends State<HomePage> {
     'about': GlobalKey(),
     'skills': GlobalKey(),
     'projects': GlobalKey(),
-    'videos': GlobalKey(),
+    'articles': GlobalKey(),
     'experience': GlobalKey(),
     'contact': GlobalKey(),
   };
@@ -72,7 +73,7 @@ class _HomePageState extends State<HomePage> {
                   Container(key: _sectionKeys['about'], child: const AboutSection()),
                   Container(key: _sectionKeys['skills'], child: const SkillsSection()),
                   Container(key: _sectionKeys['projects'], child: const ProjectsSection()),
-                  Container(key: _sectionKeys['videos'], child: const VideosSection()),
+                  Container(key: _sectionKeys['articles'], child: const ArticlesSection()),
                   Container(key: _sectionKeys['experience'], child: const ExperienceSection()),
                   Container(key: _sectionKeys['contact'], child: const ContactSection()),
                   const FooterSection(),

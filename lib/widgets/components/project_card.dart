@@ -23,8 +23,11 @@ class ProjectCard extends StatelessWidget {
             decoration: BoxDecoration(
               color: AppTheme.surfaceLight,
               image: DecorationImage(
-                image: NetworkImage(project.imageUrl),
-                fit: BoxFit.cover,
+                // Dynamically load Network or Asset image based on URL structure
+                image: project.imageUrl.startsWith('http')
+                    ? NetworkImage(project.imageUrl) as ImageProvider
+                    : AssetImage(project.imageUrl),
+                fit: BoxFit.contain,
                 onError: (exception, stackTrace) => {},
               ),
             ),

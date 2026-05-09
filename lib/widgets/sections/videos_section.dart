@@ -22,8 +22,8 @@ class VideosSection extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SectionTitle(
-                title: 'Demo Videos',
-                subtitle: 'Watch walkthroughs and live demos of my projects',
+                title: 'Technical Writing',
+                subtitle: 'Articles on embedded systems, backend architecture, and engineering leadership',
               ),
               const SizedBox(height: 40),
               _buildGrid(context, crossAxisCount),

@@ -2,28 +2,28 @@ import '../models/experience.dart';
 
 const List<Experience> experiences = [
   Experience(
-    title: 'Embedded Software Engineer',
-    company: 'Company Name',
-    period: '2022 — Present',
+    title: 'Lead Embedded Software Engineer',
+    company: 'Gewinner',
+    period: 'Oct 2025 — Present',
     description:
-        'Developing BLE-enabled embedded systems and sensor integration solutions for smart devices.',
+        'Leading the firmware architecture for a BLE-enabled smart ring.',
     highlights: [
-      'Architected firmware for nRF52-based BLE peripherals with OTA update support',
-      'Implemented low-power sensor acquisition pipelines on STM32 with DMA and RTOS',
-      'Reduced power consumption by 40% through optimized sleep mode transitions',
+      'Developed low-power nRF52 firmware integrating accelerometer and gyroscope sensors for gesture-based interactions',
+      'Defined and validated BLE GATT services, characteristics, and custom data formats for seamless mobile app synchronization',
+      'Mentored engineering students on complex STM32F7 vision systems utilizing OV7670 camera modules',
       'Collaborated with hardware team on PCB bring-up and signal integrity debugging',
     ],
   ),
   Experience(
-    title: 'Flutter Developer',
-    company: 'Cali Sport (Personal Project)',
-    period: '2021 — 2022',
+    title: 'Embedded Software Developer',
+    company: 'STMicroelectronics',
+    period: 'Oct 2024 — Oct 2025',
     description:
-        'Designed and built the Cali Sport mobile application from concept to release.',
+        'Engineered critical firmware update tools and GUI components for the STM32 ecosystem.',
     highlights: [
-      'Built a complete Flutter mobile app with clean architecture and responsive UI',
-      'Integrated REST APIs and local data persistence with Hive',
-      'Published to app stores with positive user feedback',
+      'Architected a firmware comparison functionality in STM32CubeProgrammer utilizing robust checksum-based validation',
+      'Drastically reduced reprogramming time by enabling selective flash sector updates',
+      'Published to app stores with positive user feedbackDeveloped and debugged JavaFX-based GUI components, improving overall tool stability',
     ],
   ),
 ];

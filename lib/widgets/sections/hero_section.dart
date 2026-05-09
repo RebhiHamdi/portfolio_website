@@ -100,7 +100,7 @@ class _HeroTextContent extends StatelessWidget {
         ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 620),
           child: Text(
-            'Firmware, BLE, and connected app experiences built for product reliability. I design embedded systems that work predictably in the field and are easy to maintain over time.',
+            'Building enduring embedded systems and connected product experiences. I bridge the gap between low-level hardware and user-facing software, focusing on disciplined execution and relentless field reliability.',
             style: GoogleFonts.inter(
               fontSize: 17,
               color: AppTheme.textSecondary,
@@ -112,11 +112,11 @@ class _HeroTextContent extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
-            _HeroBullet(label: 'STM32 / nRF52 firmware with BLE and sensor integration'),
+            _HeroBullet(label: 'Architecting STM32 & nRF52 firmware for BLE and complex sensor integration'),
             SizedBox(height: 14),
-            _HeroBullet(label: 'Flutter apps that connect embedded devices to users'),
+            _HeroBullet(label: 'Developing full-stack ecosystems: Flutter mobile interfaces, NestJS backends, and automated workflows'),
             SizedBox(height: 14),
-            _HeroBullet(label: 'Low-power product engineering for dependable deployment'),
+            _HeroBullet(label: 'Leading end-to-end product engineering—from bare-metal to cloud—for dependable deployment'),
           ],
         ),
         const SizedBox(height: 32),
@@ -255,7 +255,7 @@ class _HeroImageCard extends StatelessWidget {
                       borderRadius: BorderRadius.circular(14),
                     ),
                     child: Text(
-                      'Firmware & system design',
+                      'End-to-End System Design',
                       style: GoogleFonts.inter(
                         fontSize: 13,
                         fontWeight: FontWeight.w600,
@@ -318,7 +318,7 @@ class _HeroImageCard extends StatelessWidget {
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Text(
-                        'nRF52 • STM32',
+                        'nRF52 • STM32 • Flutter • NestJS',
                         style: GoogleFonts.inter(
                           fontSize: 12,
                           color: AppTheme.primaryLight,
